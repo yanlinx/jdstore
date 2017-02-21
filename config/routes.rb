@@ -11,7 +11,7 @@ Rails.application.routes.draw do
    end
  end
 
-  root 'products#index'
+  root 'welcome#index'
   devise_for :users
 
   resources :products do

@@ -1,4 +1,4 @@
-<div class="row">
+<div class="container">
   <div class="col-md-6">
     <% if @product.image.present? %>
       <%= image_tag(@product.image.medium.url, class: "thumbnail") %>
@@ -13,8 +13,8 @@
         <%= @product.description %>
       </p>
     </div>
-    <div> 数量 : <%= @product.quantity %> </div>
-    <div class="product-price"> ￥ <%= @product.price %> </div>
+    <div> 库存 : <%= @product.quantity %> </div>
+    <div class="product-price">价格 :￥ <%= @product.price %> </div>
     <div class="pull-right">
       <% if @product.quantity.present? && @product.quantity > 0 %>
         <%= link_to("加入购物车", add_to_cart_product_path(@product), method: :post,
