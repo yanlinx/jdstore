@@ -1,3 +1,4 @@
+<body style="background-color:#C8E6C9">
 <div class="container">
   <div class="col-md-6">
     <% if @product.image.present? %>
@@ -13,6 +14,7 @@
         <%= @product.description %>
       </p>
     </div>
+    <br><br>
     <div> 库存 : <%= @product.quantity %> </div>
     <div class="product-price">价格 :￥ <%= @product.price %> </div>
     <div class="pull-right">
@@ -25,3 +27,4 @@
     </div>
   </div>
 </div>
+</body>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'about' => 'products#about'
+  
  namespace :admin do
    resources :products
    resources :orders do
